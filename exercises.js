@@ -20,8 +20,7 @@ let atletas = [
     }
    ];
 
-// esta funcao esta fazendo a soma das notas e tirando a 
-// nota maior e a menor pedida nas especificações o desafio
+// esta funcao esta fazendo a soma das notas pedido nas especificações o desafio
    function calcularMedia(atletas) {
     for (let i = 0; i < atletas.length; i++) {
       let notas = atletas[i].notas;
