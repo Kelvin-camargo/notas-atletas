@@ -1,3 +1,6 @@
+
+
+//matriz disponibilizada pelo desafio
 let atletas = [
     {
       nome: "Cesar Abascal",
@@ -17,7 +20,8 @@ let atletas = [
     }
    ];
 
-
+// esta funcao esta fazendo a soma das notas e tirando a 
+// nota maior e a menor pedida nas especificações o desafio
    function calcularMedia(atletas) {
     for (let i = 0; i < atletas.length; i++) {
       let notas = atletas[i].notas;
@@ -30,6 +34,9 @@ let atletas = [
         soma += nota;
       });
 
+
+    // esta variavel media é responsavel por calcular a media dos atletas
+    // e apresentar ela juntamente com o nome e as notas do atleta no console
       let media = soma / notasComputadas.length;
       console.log(`Atleta: ${atletas[i].nome}`);
       console.log(`Notas Obtidas: ${notas}`);
@@ -37,5 +44,6 @@ let atletas = [
     }
 
   }
-   
+
+  // aqui estamos chamando a função criada anteriormente 
    calcularMedia(atletas);
